@@ -1,7 +1,7 @@
 ---
-name: Feature request
+name: terrareal Feature request
 about: Suggest an idea for this project
-title: ''
+title: ''token
 labels: ''
 assignees: ''
 
