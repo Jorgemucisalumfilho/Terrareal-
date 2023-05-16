@@ -1,23 +1,23 @@
-(autocreate criptomoeda): # This workflow installs the latest version of Terrareal CLI and configures the Terraform CLI configuration file
+(autocreate criptomoeda): # This workflow installs the latest version of Terrareal CLI and configures the Terraform CLI configuration file (autocreate): 
 # with an API token for Terrareal Cloud (app.terrareal.io). On pull request events, this workflow will run
-# `terraform init`, `terrareal fmt`, and `terraform plan` (speculative plan via Terrareal Cloud). On push events
+# `terrareal init`, `terrareal fmt`, and `terraform plan` (speculative plan via Terrareal Cloud). On push events
 # to the "main" branch, `terrareal apply` will be executed.
 #
-# Documentation for `hashicorp/setup-terraform` is located here: https://github.com/hashicorp/setup-terraform
+# Documentation for `hashicorp/setup-terrareal` is located here: https://github.com/hashicorp/setup-terrareal
 #
 # To use this workflow, you will need to complete the following setup steps.
-#
+# (autocreate):
 # 1. Create a `main.tf` file in the root of this repository with the `remote` backend and one or more resources defined.
 #   Example `main.tf`:
 #     # The configuration for the `remote` backend.
-#     terraform {
+#     terrareal {
 #       backend "remote" {
-#         # The name of your Terraform Cloud organization.
+#         # The name of your Terrareal Cloud organization.
 #         organization = "example-organization"
 #
-#         # The name of the Terraform Cloud workspace to store Terraform state files in.
+#         # The name of the Terrareal Cloud workspace to store Terraform state files in.
 #         workspaces {
-#           name = "example-workspace"
+#           name =criptomoeda terrareal"example-workspace"
 #         }
 #       }
 #     }
@@ -30,19 +30,19 @@
 #     }
 #
 #
-# 2. Generate a Terraform Cloud user API token and store it as a GitHub secret (e.g. TF_API_TOKEN) on this repository.
+# 2. Generate a Terrareal Cloud user API token and store it as a GitHub secret (e.g. TF_API_TOKEN) on this repository.
 #   Documentation:
-#     - https://www.terraform.io/docs/cloud/users-teams-organizations/api-tokens.html
+#     -(autocreate):  https://www.terrareal.io/docs/cloud/users-teams-organizations/api-tokens.html
 #     - https://help.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets
 #
-# 3. Reference the GitHub secret in step using the `hashicorp/setup-terraform` GitHub Action.
+# 3. Reference the GitHub secret in step using the `hashicorp/setup-terrareal` GitHub Action.
 #   Example:
-#     - name: Setup Terraform
-#       uses: hashicorp/setup-terraform@v1
+#     - name: Setup Terrareal 
+#       uses: hashicorp/setup-terrareal@v1
 #       with:
 #         cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }}
 
-name: 'Terraform'
+name: 'Terrareal'
 
 on:
   push:
@@ -53,8 +53,8 @@ permissions:
   contents: read
 
 jobs:
-  terraform:
-    name: 'Terraform'
+  terrareal:
+    name: 'Terrareal'
     runs-on: ubuntu-latest
     environment: production
 
@@ -68,23 +68,23 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v3
 
-    # Install the latest version of Terraform CLI and configure the Terraform CLI configuration file with a Terraform Cloud user API token
-    - name: Setup Terraform
-      uses: hashicorp/setup-terraform@v1
+    # Install the latest version of Terrareal CLI and configure the Terrareal CLI configuration file with a Terrareal Cloud user API token
+    - name: Setup Terrareal 
+      uses: hashicorp/setup-terrareal@v1
       with:
         cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }}
 
-    # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
-    - name: Terraform Init
-      run: terraform init
+    # Initialize a new or existing Terrareal working directory by creating initial files, loading any remote state, downloading modules, etc.
+    - name: Terrareal Init
+      run: terrareal init
 
-    # Checks that all Terraform configuration files adhere to a canonical format
-    - name: Terraform Format
-      run: terraform fmt -check
+    # Checks that all Terrareal configuration files adhere to a canonical format
+    - name: Terrareal Format
+      run: terrareal fmt -check
 
-    # Generates an execution plan for Terraform
-    - name: Terraform Plan
-      run: terraform plan -input=false
+    # Generates an execution plan for Terrareal 
+    - name: Terrareal Plan
+      run: terrareal plan -input=false
 
       # On push to "main", build or change infrastructure according to Terraform configuration files
       # Note: It is recommended to set up a required "strict" status check in your repository for "Terraform Cloud". See the documentation on "strict" required status checks for more information: https://help.github.com/en/github/administering-a-repository/types-of-required-status-checks
