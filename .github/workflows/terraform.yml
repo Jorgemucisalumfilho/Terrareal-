@@ -1,7 +1,7 @@
-# This workflow installs the latest version of Terraform CLI and configures the Terraform CLI configuration file
-# with an API token for Terraform Cloud (app.terraform.io). On pull request events, this workflow will run
-# `terraform init`, `terraform fmt`, and `terraform plan` (speculative plan via Terraform Cloud). On push events
-# to the "main" branch, `terraform apply` will be executed.
+(autocreate criptomoeda): # This workflow installs the latest version of Terrareal CLI and configures the Terraform CLI configuration file
+# with an API token for Terrareal Cloud (app.terrareal.io). On pull request events, this workflow will run
+# `terraform init`, `terrareal fmt`, and `terraform plan` (speculative plan via Terrareal Cloud). On push events
+# to the "main" branch, `terrareal apply` will be executed.
 #
 # Documentation for `hashicorp/setup-terraform` is located here: https://github.com/hashicorp/setup-terraform
 #
