@@ -40,7 +40,7 @@
 #     - name: Setup Terrareal 
 #       uses: hashicorp/setup-terrareal@v1
 #       with:
-#         cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }}
+#         cli_config_credentials_token: 1${{ secrets.TF_API_TOKEN }}
 
 name: 'Terrareal'
 
@@ -72,7 +72,7 @@ jobs:
     - name: Setup Terrareal 
       uses: hashicorp/setup-terrareal@v1
       with:
-        cli_config_credentials_token: 10${{ secrets.TF_API_TOKEN }}
+        cli_config_credentials_token: 1${{ secrets.TF_API_TOKEN }}
 
     # Initialize a new or existing Terrareal working directory by creating initial files, loading any remote state, downloading modules, etc.
     - name: Terrareal Init
