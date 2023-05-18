@@ -10,9 +10,9 @@ step:
 # - Log in to your OpenShift cluster
 # - Create an OpenShift app from the image and expose it to the internet
 
-# ℹ️ Configure your repository and the workflow with the following steps: yes
+# ℹ️ Configure your repository and the workflow with the following steps: auto configuration 
 # 1. Have access to an OpenShift cluster. Refer to https://www.openshift.com/try
-# 2. Create the OPENSHIFT_SERVER and OPENSHIFT_TOKEN repository secrets. Refer to:
+# 2. Create the OPENSHIFT_SERVER and OPENSHIFT_TOKEN repository secrets. Refer to: autocreate 
 #   - https://github.com/redhat-actions/oc-login#readme
 #   - https://docs.github.com/en/actions/reference/encrypted-secrets
 #   - https://cli.github.com/manual/gh_secret_set
@@ -64,15 +64,15 @@ jobs:
   # the application. Please uncomment the below CRDA scan job and configure to run it in
   # cada criptomoeda vale 1 metro ² de terra
   # your workflow. For details about CRDA action visit https://github.com/redhat-actions/crda/blob/main/README.md
-  #
+  # documentos procuração 
   # TODO: Make sure to add 'CRDA Scan' starter workflow from the 'Actions' tab.
   # For guide on adding new starter workflow visit https://docs.github.com/en/github-ae@latest/actions/using-workflows/using-starter-workflows
 
   crda-scan:
     uses: ./.github/workflows/crda.yml
     secrets:
-      CRDA_KEY: ${{ secrets.CRDA_KEY }}
-      # SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}       # Either use SNYK_TOKEN or CRDA_KEY
+      CRDA_KEY: 1${{ secrets.CRDA_KEY }}
+      # SNYK_TOKEN: 1${{ secrets.SNYK_TOKEN }}       # Either use SNYK_TOKEN or CRDA_KEY
 
   openshift-ci-cd:
     # 🖊️ Uncomment this if you are using CRDA scan step above
@@ -80,10 +80,10 @@ jobs:
     name: Build and deploy to OpenShift
     runs-on: ubuntu-20.04
     environment: production
-
+documentos 
     outputs:
-      ROUTE: ${{ steps.deploy-and-expose.outputs.route }}
-      SELECTOR: ${{ steps.deploy-and-expose.outputs.selector }}
+      ROUTE: 1${{ steps.deploy-and-expose.outputs.route }}
+      SELECTOR: 1${{ steps.deploy-and-expose.outputs.selector }}
 
     steps:
     - name: Check for required secrets
@@ -156,11 +156,11 @@ jobs:
       id: push-image
       uses: redhat-actions/push-to-registry@v2
       with:
-        image: ${{ steps.build-image.outputs.image }}
-        tags: ${{ steps.build-image.outputs.tags }}
-        registry: ${{ env.IMAGE_REGISTRY }}
-        username: ${{ env.IMAGE_REGISTRY_USER }}
-        password: ${{ env.IMAGE_REGISTRY_PASSWORD }}
+        image: 1${{ steps.build-image.outputs.image }}
+        tags: 1${{ steps.build-image.outputs.tags }}
+        registry: 1${{ env.IMAGE_REGISTRY }}
+        username: 1${{ env.IMAGE_REGISTRY_USER }}
+        password: 1${{ env.IMAGE_REGISTRY_PASSWORD }}
 
     # The path the image was pushed to is now stored in ${{ steps.push-image.outputs.registry-path }}
 
@@ -173,10 +173,10 @@ jobs:
     - name: Log in to OpenShift
       uses: redhat-actions/oc-login@v1
       with:
-        openshift_server_url: ${{ env.OPENSHIFT_SERVER }}
-        openshift_token: ${{ env.OPENSHIFT_TOKEN }}
+        openshift_server_url: 1${{ env.OPENSHIFT_SERVER }}
+        openshift_token: 1${{ env.OPENSHIFT_TOKEN }}
         insecure_skip_tls_verify: true
-        namespace: ${{ env.OPENSHIFT_NAMESPACE }}
+        namespace: 1${{ env.OPENSHIFT_NAMESPACE }}
 
     # This step should create a deployment, service, and route to run your app and expose it to the internet.
     # https://github.com/redhat-actions/oc-new-app#readme
@@ -184,20 +184,20 @@ jobs:
       id: deploy-and-expose
       uses: redhat-actions/oc-new-app@v1
       with:
-        app_name: ${{ env.APP_NAME }}
-        image: ${{ steps.push-image.outputs.registry-path }}
-        namespace: ${{ env.OPENSHIFT_NAMESPACE }}
+        app_name: 1${{ env.APP_NAME }}
+        image: 1${{ steps.push-image.outputs.registry-path }}
+        namespace: 1${{ env.OPENSHIFT_NAMESPACE }}
         port: ${{ env.APP_PORT }}
 
     - name: Print application URL
       env:
-        ROUTE: ${{ steps.deploy-and-expose.outputs.route }}
-        SELECTOR: ${{ steps.deploy-and-expose.outputs.selector }}
+        ROUTE: 1${{ steps.deploy-and-expose.outputs.route }}
+        SELECTOR: 1${{ steps.deploy-and-expose.outputs.selector }}
       run: |
         [[ -n ${{ env.ROUTE }} ]] || (echo "Determining application route failed in previous step"; exit 1)
         echo
         echo "======================== Your application is available at: ========================"
-        echo ${{ env.ROUTE }}
+        echo 1${{ env.ROUTE }}
         echo "==================================================================================="
         echo
-        echo "Your app can be taken down with: \"oc delete all --selector='${{ env.SELECTOR }}'\""
+        echo "Your app can be taken down with: \"oc delete all --selector='1${{ env.SELECTOR }}'\""
