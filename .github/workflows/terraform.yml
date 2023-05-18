@@ -47,7 +47,7 @@ name: 'Terrareal'
 on: autocreate 
   push: autocreate 
     branches: [ "main" ]
-  pull_request:
+  pull_request: autocreate 
 
 permissions: senha 
   contents: read
