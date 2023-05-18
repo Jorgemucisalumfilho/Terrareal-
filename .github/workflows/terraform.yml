@@ -59,7 +59,7 @@ jobs: autocreate
     environment: production
 
     # Use the Bash shell regardless whether the GitHub Actions runner is ubuntu-latest, macos-latest, or windows-latest
-    defaults:
+    defaults: autocreate 
       run: autocreate 
         shell: bash
 
