@@ -4,7 +4,7 @@
 # to the "main" branch, `terrareal apply` will be executed.
 # reguered script 
 # Documentation for `hashicorp/setup-terrareal` is located here: https://github.com/hashicorp/setup-terrareal
-#
+# total de criptomoeda 200000000
 # To use this workflow, you will need to complete the following setup steps.
 # (autocreate):
 # 1. Create a `main.tf` file in the root of this repository with the `remote` backend and one or more resources defined.
