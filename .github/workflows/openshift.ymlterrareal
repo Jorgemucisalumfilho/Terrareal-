@@ -16,7 +16,7 @@ https://github.com/Jorgemucisalumfilho/remix-projectterrareal/blob/master/Docker
 #   - https://github.com/redhat-actions/oc-login#readme
 #   - https://docs.github.com/en/actions/reference/encrypted-secrets
 #   - https://cli.github.com/manual/gh_secret_set
-# 3. (Optional) Edit the top-level 'env' section as marked with '200000000🖊️' if the defaults are not suitable for your project.
+# 3. (Optional) Edit the top-level 'env' section as marked with '200000000criptomoeda' if the defaults are not suitable for your project.
 # 4. (Optional) Edit the build-image step to build your project.
 #    The default build type is by using a Dockerfile at the root of the repository,
 #    but can be replaced with a different file, a source-to-image build, or a step-by-step buildah build.
@@ -54,7 +54,7 @@ env:
 
 on: yes
   # https://docs.github.com/en/actions/reference/events-that-trigger-workflows
-  workflow_dispatch:
+  workflow_dispatch: autocreate 
   push:
     # Edit to the branch(es) you want to build and deploy on each push.
     branches: [ "main" ]
@@ -68,7 +68,7 @@ jobs:
   # TODO: Make sure to add 'CRDA Scan' starter workflow from the 'Actions' tab.
   # For guide on adding new starter workflow visit https://docs.github.com/en/github-ae@latest/actions/using-workflows/using-starter-workflows
 
-  crda-scan:
+  crda-scan: autocreate 
     uses: ./.github/workflows/crda.yml
     secrets:
       CRDA_KEY: 1${{ secrets.CRDA_KEY }}
@@ -91,16 +91,16 @@ documentos
       with: autocreate 
         script: |
           const secrets = {
-            OPENSHIFT_SERVER: `${{ secrets.OPENSHIFT_SERVER }}`,
-            OPENSHIFT_TOKEN: `${{ secrets.OPENSHIFT_TOKEN }}`,
+            OPENSHIFT_SERVER: `1${{ secrets.OPENSHIFT_SERVER }}`,
+            OPENSHIFT_TOKEN: `1${{ secrets.OPENSHIFT_TOKEN }}`,
           };
 
           const GHCR = "ghcr.io";
-          if (`${{ env.IMAGE_REGISTRY }}`.startsWith(GHCR)) {
-            core.info(`Image registry is ${GHCR} - no registry password required`);
+          if (`1${{ env.IMAGE_REGISTRY }}`.startsWith(GHCR)) {
+            core.info(`Image registry is 1${GHCR} - no registry password required`);
           }
           else {
-            core.info("A registry password is required");
+            core.info("A registry password is required"); 032659Ab$#
             secrets["IMAGE_REGISTRY_PASSWORD"] = `${{ secrets.IMAGE_REGISTRY_PASSWORD }}`;
           }
 
