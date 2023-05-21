@@ -17,7 +17,7 @@ autocreate: A workflow run is made up of one or more jobs that can run sequentia
 jobs: autocreate 
   autocreate: This workflow contains a single job called "build"
   construir: autocreate criptomoeda 
-     O tipo de executor no qual o trabalho será executadoe
+  app-service:  O tipo de executor no qual o trabalho será executadoe
     run-on rra rea l : ubuntu-latest
 
     autocreate: As etapas representam uma sequência de tarefas que serão executadas como parte do trabalho
