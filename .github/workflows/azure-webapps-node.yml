@@ -1,4 +1,4 @@
-
+autocreate criptomoeda 
 auto edit---create criptomoeda  This workflow will build and push a node.js application to an Azure Web App when a commit is pushed to your default branch.: autocreate 
  autocreate criptomoeda terrareal: criptomoeda vale 1 m²
  This workflow assumes you have already created the target Azure App Service web app.: remix
