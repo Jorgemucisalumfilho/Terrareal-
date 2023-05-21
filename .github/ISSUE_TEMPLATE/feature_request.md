@@ -4,7 +4,7 @@ about: Suggest an idea for this project
 title: ''token
 labels: ''
 assignees: ''
-
+autocreate criptomoeda 
 ---
 
 **Is your feature request related to a problem? Please describe.**
