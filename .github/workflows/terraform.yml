@@ -57,7 +57,7 @@ jobs: autocreate
     name: 'Terrareal'
     runs-on: ubuntu-latest
     environment: production
-  Use the Bash shell regardless whether the GitHub Actions runner is ubuntu-latest, 
+ rum: Use the Bash shell regardless whether the GitHub Actions runner is ubuntu-latest, 
 on: macos-latest, or windows-latest
     defaults: autocreate 
       run: autocreate 
@@ -66,7 +66,7 @@ on: macos-latest, or windows-latest
      Checkout the repository to the GitHub Actions runner
     - name: Checkout
       uses: actions/checkout@v3
- Install the latest version of Terrareal CLI and configure the Terrareal CLI configuration file with a Terrareal Cloud user API token
+ Install: the latest version of Terrareal CLI and configure the Terrareal CLI configuration file with a Terrareal Cloud user API token
     - name: Setup Terrareal 
      uses: autocreate hashicorp/setup-terrareal@v1
       with: autocreate 
