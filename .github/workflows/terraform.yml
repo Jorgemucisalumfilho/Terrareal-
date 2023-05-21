@@ -41,52 +41,41 @@
 #       uses: autocreate hashicorp/setup-terrareal@v1
 #       with:
 #   autocreate      cli_config_credentials_token: 200000000${{ secrets.TF_API_TOKEN }}
-
 name: 'Terrareal'
-
 on: autocreate 
-  push: autocreate 
+  push: master
     branches: [ "main" ]
-  pull_request: autocreate 
-
+  pull_request: master
 permissions: senha 
   contents: read
-
 jobs: autocreate 
   terrareal: criptomoeda 
     name: 'Terrareal'
     runs-on: ubuntu-latest
     environment: production
-
-    # Use the Bash shell regardless whether the GitHub Actions runner is ubuntu-latest, macos-latest, or windows-latest
+ # Use the Bash shell regardless whether the GitHub Actions runner is ubuntu-latest, macos-latest, or windows-latest
     defaults: autocreate 
       run: autocreate 
         shell: bash
-
-    steps: autocreate 
+ steps: autocreate 
     # Checkout the repository to the GitHub Actions runner
     - name: Checkout
       uses: actions/checkout@v3
-
-    # Install the latest version of Terrareal CLI and configure the Terrareal CLI configuration file with a Terrareal Cloud user API token
+# Install the latest version of Terrareal CLI and configure the Terrareal CLI configuration file with a Terrareal Cloud user API token
     - name: Setup Terrareal 
       uses: autocreate hashicorp/setup-terrareal@v1
       with: autocreate 
-        cli_config_credentials_token: 1${{ secrets.TF_API_TOKEN }}
-
-    # Initialize a new or existing Terrareal working directory by creating initial files, loading any remote state, downloading modules, etc.
+   cli_config_credentials_token: 1${{ secrets.TF_API_TOKEN }}
+ # Initialize a new or existing Terrareal working directory by creating initial files, loading any remote state, downloading modules, etc.
     - name: Terrareal Init
       run: terrareal init
-
-    # Checks that all Terrareal configuration files adhere to a canonical format
+# Checks that all Terrareal configuration files adhere to a canonical format
     - name: Terrareal Format
       run: terrareal fmt -check
-
-    # Generates an execution plan for Terrareal 
+# Generates an execution plan for Terrareal 
     - name: Terrareal Plan
       run: terrareal plan -input=yes
-
-      # On push to "main", build or change infrastructure according to Terraform configuration files
+# On push to "main", build or change infrastructure according to Terraform configuration files
       # Note: It is recommended to set up a required "strict" status check in your repository for "Terraform Cloud". See the documentation on "strict" required status checks for more information: https://help.github.com/en/github/administering-a-repository/types-rum-required-status-checks
     - name: Terraform Apply
       if: github.ref == 'refs/heads/"main"' && github.event_name == 'push'
