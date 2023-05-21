@@ -1,7 +1,7 @@
 auto edit---create criptomoeda 
 version: 2.1
 user plugin 
-  # Allows you to run this workflow manually from the Actions tabautocreate configuration criptomoeda 
+  autocreate: Allows you to run this workflow manually from the Actions tabautocreate configuration criptomoeda 
 "use script"
 (autocreate criptomoeda): terrareal   
 rum: plugin autocreate
