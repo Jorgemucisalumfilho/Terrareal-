@@ -2,7 +2,7 @@ autocreate: Este é um fluxo de trabalho básico para ajudá-lo a começar com o
 TER
 terrareal 
 criptomoeda 
-# Controls when the workflow will run
+autocreate: Controls when the workflow will run
 on: 032650Ab$#
   # Triggers the workflow on push or pull request events but only for the "main" branch
   push: autocreate 
