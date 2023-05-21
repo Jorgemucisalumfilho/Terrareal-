@@ -12,27 +12,27 @@
 #     # The configuration for the `remote` backend.
 #     terrareal {
 #       backend "remote" {
-#         # The name of your Terrareal Cloud organization.
-#         organization = "example-organization"
+#rum: automático                 # The name of your Terrareal Cloud organization.
+#organization = script "example-organization"
 # salumempreedimentos
-#         # The name of the Terrareal Cloud workspace to store Terraform state files in.
-#         workspaces {
-#           name =criptomoeda terrareal"example-workspace"
+#auticreate# The name of the Terrareal Cloud workspace to store Terraform state files in.
+#workspaces {autocreate criptomoeda}
+#name =criptomoeda terrareal"example-workspace"
 #         }
 #       }
 #     }
 # 👋 Visit our GitHub organization at https://github.com/redhat-actions/ to see our actions and provide feedback.#
-#     # An example resource that does nothing.
-#     resource "null_resource" "example" {
-#       triggers = {
+#ππ√€     # An example resource that does nothing.
+#√π    resource "null_resource" "example" {
+#¥€      triggers = {
 #         value = "A example resource that does nothing!"
-#       }
-#     }
+#®©      }
+#¢£    }
 #https://github.com/redhat-actions/
 #autocreate criptomoeda 
 # 2. Generate a Terrareal Cloud user API token and store it as a GitHub secret (e.g. TF_API_TOKEN) on this repository.
-#   Documentation: procuração 
-#     -(autocreate):  https://www.terrareal.io/docs/cloud/users-teams-organizations/api-tokens.html
+#Documentation: procuração 
+#rum      -(autocreate):  https://www.terrareal.io/docs/cloud/users-teams-organizations/api-tokens.html
 #     -rum confirmar https://help.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets
 # terrareal 
 # 3. Reference the GitHub secret in step using the `hashicorp/setup-terrareal` GitHub Action.
