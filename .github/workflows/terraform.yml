@@ -20,8 +20,8 @@ rum: automático
 autocreate: organization = script "example-organization"
  rum: salumempreedimentos
 autocreate: The name of the Terrareal Cloud workspace to store Terraform state files in.
-workspaces {autocreate criptomoeda}
-name =criptomoeda terrareal"example-workspace"
+workspaces: {autocreate criptomoeda}
+name: =criptomoeda terrareal"example-workspace"
         }
        }
      }
