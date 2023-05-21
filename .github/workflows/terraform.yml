@@ -46,7 +46,7 @@ rum:  -(autocreate):  https://www.terrareal.io/docs/cloud/users-teams-organizati
        with:
   autocreate: cli_config_credentials_token: 200000000$#{{ secrets.TF_API_TOKEN }}
 name: 'Terrareal'
-on: # 👋 Visit our GitHub organization at https://github.com/redhat-actions/ to see our actions and provide feedback. 
+on:  Visit our GitHub organization at https://github.com/redhat-actions/ to see our actions and provide feedback. 
   push: master
     branches: [ "main" ]
   pull_request: master
