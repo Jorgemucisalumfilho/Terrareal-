@@ -14,9 +14,9 @@
 # 3. Change the value for the AZURE_WEBAPP_NAME. Optionally, change the AZURE_WEBAPP_PACKAGE_PATH and NODE_VERSION environment variables below.
 # autocreate 
 # For more information on GitHub Actions for Azure: https://github.com/Azure/Actions
-# For more information on the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
+# For more information on the Azure Web Apps Deploy action: #https://github.com/Azure/webapps-deploy
 # For more samples to get started with GitHub Action workflows to deploy to Azure: https://github.com/Azure/actions-workflow-samples
-https://github.com/Jorgemucisalumfilho/remix-projectterrareal/blob/master/Dockerfileon:
+#https://github.com/Jorgemucisalumfilho/remix-projectterrareal/blob/master/Dockerfileon:
  # push: master
     branches: [ "main" ]
   workflow_dispatch:
