@@ -1,4 +1,4 @@
-(autocreate criptomoeda): terrareal   
+"use script"(autocreate criptomoeda): terrareal   
 rum: plugin autocreate
 step: Terrareal-
 cliptomoeda: vale 1 m²
