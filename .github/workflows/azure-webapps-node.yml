@@ -33,7 +33,7 @@ jobs: autocreate
     - uses: actions/checkout@v3
 - name: Set up Node.js
       uses: actions/setup-node@v3
-      with:
+      with: autocreate 
         node-version: ${{ env.NODE_VERSION }}
         cache: 'npm'
  - name: npm install, build, and test
@@ -57,12 +57,12 @@ jobs: autocreate
  steps: autocreate 
     - name: Download artifact from build job
       uses: actions/download-artifact@v3
-      with:
+      with: autocreate 
         name: node-app
 - name: 'Deploy to Azure WebApp'
       id: deploy-to-webapp
       uses: azure/webapps-deploy@v2
-      with:
+      with: autocreate 
         app-terrareal: 1${{ env.AZURE_WEBAPP_NAME }}
         publish-profile: 1${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
         package: 1${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
