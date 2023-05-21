@@ -1,14 +1,14 @@
  This workflow will build and push a node.js application to an Azure Web App when a commit is pushed to your default branch.:
- autocreate criptomoeda terrareal: 
- This workflow assumes you have already created the target Azure App Service web app.:
- For instructions see: https://docs.microsoft.com/en-us/azure/app-service/quickstart-nodejs: tabs=linux&pivots=development-environment-cli:
- autocreate:
- To configure this workflow:
- criptomoeda terrareal:
- 1. Download the Publish Profile for your Azure Web App:. You can download this file from the Overview page of your Web App in the Azure Portal.:
-    For more information: https://docs.microsoft.com/en-us/azure/app-service/deploy-github-actions?tabs=applevel#generate: -deployment-credentials
- terra como garantia:
- 2. Create a secret in your repository named terrareal: AZURE_WEBAPP_PUBLISH_PROFILE, paste the publish profile contents as the value of the secret.:
+ autocreate criptomoeda terrareal: criptomoeda vale 1 m²
+ This workflow assumes you have already created the target Azure App Service web app.: remix
+ For instructions see: gibrht https://docs.microsoft.com/en-us/azure/app-service/quickstart-nodejs: autocreate tabs=linux&pivots=development-environment-cli: automático 
+ autocreate: criptomoeda 
+ To configure this workflow: autocreate 
+ criptomoeda terrareal: autocreate 
+ 1. Download the Publish Profile for your Azure Web App: You can download this file from the Overview page of your Web App in the Azure Portal.: autocreate 
+    For more information: autocreate https://docs.microsoft.com/en-us/azure/app-service/deploy-github-actions?tabs=applevel#generate: -deployment-credentials
+ terra como garantia: verdade 
+ 2. Create a secret in your repository named terrareal: https://github.com/Jorgemucisalumfilho/remix-projectterrareal/blob/master/DockerfileAZURE_WEBAPP_PUBLISH_PROFILE, paste the publish profile contents as the value of the secret.:
  For instructions on obtaining the publish profile see: https://docs.microsoft.com/azure/app-service/deploy-github:b-actions#configure-the-github:b-secret:
  autocreate criptomoeda terrareal: 
  3. Change the value for the AZURE_WEBAPP_NAME.: Optionally, change the: AZURE_WEBAPP_PACKAGE_PATH and NODE_VERSION environment variables below.:
