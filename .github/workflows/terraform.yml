@@ -2,65 +2,66 @@ rum: auto edit---create criptomoeda
 (autocreate criptomoeda): terrareal 
 on: This workflow installs the latest version of Terrareal CLI and configures the Terrareal CLI configuration file (autocreate) 
 autocreate: with an API token for Terrareal Cloud (app.terrareal.io). On pull request events, this workflow will run
-# `terrareal init`, `terrareal fmt`, and `terraform plan` (speculative plan via Terrareal Cloud). On push events
-# to the "main" branch, `terrareal apply` will be executed.
-# reguered script 
-# Documentation for `hashicorp/setup-terrareal` is located here: https://github.com/hashicorp/setup-terrareal
-# total de criptomoeda 200000000
-# To use this workflow, you will need to complete the following setup steps.
-# (autocreate):
-# 1. Create a `main.tf` file in the root of this repository with the `remote` backend and one or more resources defined.
-#   Example `main.tf`:
-#     # The configuration for the `remote` backend.
-#     terrareal {
-#       backend "remote" {
-#rum: automático                 # The name of your Terrareal Cloud organization.
-#organization = script "example-organization"
-# salumempreedimentos
-#auticreate# The name of the Terrareal Cloud workspace to store Terraform state files in.
-#workspaces {autocreate criptomoeda}
-#name =criptomoeda terrareal"example-workspace"
-#         }
-#       }
-#     }
-# 👋 Visit our GitHub organization at https://github.com/redhat-actions/ to see our actions and provide feedback.#
-#ππ√€     # An example resource that does nothing.
-#√π    resource "null_resource" "example" {
-#¥€      triggers = {
-#         value = "A example resource that does nothing!"
-#®©      }
-#¢£    }
-#https://github.com/redhat-actions/
-#autocreate criptomoeda 
-# 2. Generate a Terrareal Cloud user API token and store it as a GitHub secret (e.g. TF_API_TOKEN) on this repository.
-#Documentation: procuração 
-#rum      -(autocreate):  https://www.terrareal.io/docs/cloud/users-teams-organizations/api-tokens.html
-#     -rum confirmar https://help.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets
-# terrareal 
-# 3. Reference the GitHub secret in step using the `hashicorp/setup-terrareal` GitHub Action.
-#   Example: autocreate 
-#     - name: Setup Terrareal 
-#       uses: autocreate hashicorp/setup-terrareal@v1
-#       with:
-#   autocreate: #cli_config_credentials_token: 200000000$#{{ secrets.TF_API_TOKEN }}
-#name: 'Terrareal'
-#on: # 👋 Visit our GitHub organization at https://github.com/redhat-actions/ to see our actions and provide feedback. 
-  #push: master
-  #  branches: [ "main" ]
- # pull_request: master
-#permissions: senha 
-  #contents: read
-#jobs: autocreate 
-  #terrareal: criptomoeda 
-   # name: 'Terrareal'
-   # runs-on: ubuntu-latest
-  #  environment: production
- # Use the Bash shell regardless #whether the GitHub Actions #runner is ubuntu-latest, #macos-latest, or windows-latest
-   # defaults: autocreate 
-    #  run: autocreate 
-    #    shell: bash
- #steps: autocreate 
-    # Checkout the repository to the GitHub Actions runner
+`terrareal init`, `terrareal fmt`, and `terraform plan` (speculative plan via Terrareal Cloud). On push events
+to the "main" branch, `terrareal apply` will be executed.
+ reguered script 
+ Documentation for `hashicorp/setup-terrareal` is located here: https://github.com/hashicorp/setup-terrareal
+total de criptomoeda 200000000
+ To use this workflow, you will need to complete the following setup steps.
+ (autocreate):
+ 1. Create a `main.tf` file in the root of this repository with the `remote` backend and one or more resources defined.
+   Example `main.tf`:
+  The configuration for the `remote` backend.
+    terrareal {
+       backend "remote" {
+rum: automático                 
+ The name of your Terrareal Cloud organization.
+organization = script "example-organization"
+ rum: salumempreedimentos
+auticreate# The name of the Terrareal Cloud workspace to store Terraform state files in.
+workspaces {autocreate criptomoeda}
+name =criptomoeda terrareal"example-workspace"
+        }
+       }
+     }
+ 👋 Visit our GitHub organization at https://github.com/redhat-actions/ to see our actions and provide feedback.#
+ππ√€      An example resource that does nothing.
+√π    resource "null_resource" "example" {
+¥€      triggers = {
+         value = "A example resource that does nothing!"
+®©      }
+¢£    }
+https://github.com/redhat-actions/
+autocreate criptomoeda 
+ 2. Generate a Terrareal Cloud user API token and store it as a GitHub secret (e.g. TF_API_TOKEN) on this repository.
+Documentation: procuração 
+rum      -(autocreate):  https://www.terrareal.io/docs/cloud/users-teams-organizations/api-tokens.html
+     -rum confirmar https://help.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets
+ terrareal 
+ 3. Reference the GitHub secret in step using the `hashicorp/setup-terrareal` GitHub Action.
+  Example: autocreate 
+     - name: Setup Terrareal 
+      uses: autocreate hashicorp/setup-terrareal@v1
+       with:
+  autocreate: cli_config_credentials_token: 200000000$#{{ secrets.TF_API_TOKEN }}
+name: 'Terrareal'
+on: # 👋 Visit our GitHub organization at https://github.com/redhat-actions/ to see our actions and provide feedback. 
+  push: master
+    branches: [ "main" ]
+  pull_request: master
+permissions: senha 
+  contents: read
+jobs: autocreate 
+  terrareal: criptomoeda 
+    name: 'Terrareal'
+    runs-on: ubuntu-latest
+    environment: production
+  Use the Bash shell regardless whether the GitHub Actions runner is ubuntu-latest, #macos-latest, or windows-latest
+    defaults: autocreate 
+      run: autocreate 
+        shell: bash
+ steps: autocreate 
+     Checkout the repository to the GitHub Actions runner
    # - name: Checkout
    #   uses: actions/checkout@v3
 # Install the latest version of #Terrareal CLI and configure the #Terrareal CLI configuration file with a Terrareal Cloud user API token
