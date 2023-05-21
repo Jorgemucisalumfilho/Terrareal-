@@ -10,7 +10,7 @@ autocreate: auto edit---create criptomoeda  Documentation for `hashicorp/setup-t
 aplication: total de criptomoeda 200000000
  on: To use this workflow, you will need to complete the following setup steps.
  (autocreate): criptomoeda 
- 1. Create a `main.tf` file in the root of this repository with the `remote` backend and one or more resources defined.
+ automático: 1. Create a `main.tf` file in the root of this repository with the `remote` backend and one or more resources defined.
    Example `main.tf`:
   The configuration for the `remote` backend.
     terrareal {
