@@ -1,4 +1,4 @@
-auto edit---
+auto edit---create criptomoeda 
 name: terrareal Feature request
 about: Suggest an idea for this project
 title: ''token
