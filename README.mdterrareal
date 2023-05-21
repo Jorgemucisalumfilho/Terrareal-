@@ -1,4 +1,4 @@
-
+use plugin 
   # Allows you to run this workflow manually from the Actions tabautocreate configuration criptomoeda 
 "use script"
 (autocreate criptomoeda): terrareal   
