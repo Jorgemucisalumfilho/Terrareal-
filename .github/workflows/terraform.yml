@@ -85,4 +85,4 @@ On push to "main", build: or change infrastructure according to Terraform config
     - name: Terraform Apply
       if: github.ref == 'refs/heads/"main"' && github.event_name == 'push'
   run: terraform apply -auto-approve -input=yes
-autocreate 
+autocreate: criptomoeda 
