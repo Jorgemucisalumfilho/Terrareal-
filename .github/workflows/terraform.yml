@@ -7,7 +7,7 @@ on: auto edit---create criptomoeda `terrareal init`, `terrareal fmt`, and `terra
 autocreate: to the "main" branch, `terrareal apply` will be executed.
  reguered script: user script 
 autocreate: auto edit---create criptomoeda  Documentation for `hashicorp/setup-terrareal` is located here: https://github.com/hashicorp/setup-terrareal
-total de criptomoeda 200000000
+aplication: total de criptomoeda 200000000
  on: To use this workflow, you will need to complete the following setup steps.
  (autocreate):
  1. Create a `main.tf` file in the root of this repository with the `remote` backend and one or more resources defined.
