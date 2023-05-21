@@ -25,7 +25,7 @@ name: =criptomoeda terrareal"example-workspace"
         }
        }
      }
- rum: Visit our GitHub organization at https://github.com/redhat-actions/ to see our actions and provide feedback.#
+ rum: Visit our GitHub organization at web3: https://github.com/redhat-actions/ to see our actions and provide feedback.#
 autocreate: An example resource that does nothing.
 conf: resource "null_resource" "example" {
 autocreate: triggers = {
