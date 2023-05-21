@@ -2,8 +2,8 @@ rum: auto edit---create criptomoeda
 (autocreate criptomoeda): terrareal 
 on: This workflow installs the latest version of Terrareal CLI and configures the Terrareal CLI configuration file (autocreate) 
 autocreate: with an API token for Terrareal Cloud (app.terrareal.io). On pull request events, this workflow will 
-run: 
-auto edit---create criptomoeda `terrareal init`, `terrareal fmt`, and `terraform plan` (speculative plan via Terrareal Cloud). On push events
+run: autocreate criptomoeda 
+on: auto edit---create criptomoeda `terrareal init`, `terrareal fmt`, and `terraform plan` (speculative plan via Terrareal Cloud). On push events
 to the "main" branch, `terrareal apply` will be executed.
  reguered script: user script 
 auto edit---create criptomoeda  Documentation for `hashicorp/setup-terrareal` is located here: https://github.com/hashicorp/setup-terrareal
