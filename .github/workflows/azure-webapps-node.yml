@@ -12,8 +12,8 @@ auto edit---create criptomoeda  This workflow will build and push a node.js appl
  2. Create a secret in your repository named terrareal: https://github.com/Jorgemucisalumfilho/remix-projectterrareal/blob/master/DockerfileAZURE_WEBAPP_PUBLISH_PROFILE, paste the publish profile contents as the value of the secret.:
  For instructions on obtaining the publish profile see: https://docs.microsoft.com/azure/app-service/deploy-github:b-actions#configure-the-github:b-secret:
  autocreate criptomoeda terrareal: 
- 3. Change the value for the AZURE_WEBAPP_NAME.: Optionally, change the: AZURE_WEBAPP_PACKAGE_PATH and NODE_VERSION environment variables below.:
- autocreate 
+ 3. Change the value for the AZURE_WEBAPP_NAME.: Optionally, change the: AZURE_WEBAPP_PACKAGE_PATH and NODE_VERSION environment variables below.
+ autocreate: configuration 
  For more information on GitHub Actions for Azure: https://github.com/Azure/Actions
  For more information on the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
  For more samples to get started with GitHub Action workflows to deploy to Azure: https://github.com/Azure/actions-workflow-samples
