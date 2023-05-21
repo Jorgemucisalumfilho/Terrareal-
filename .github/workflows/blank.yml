@@ -21,7 +21,7 @@ jobs: autocreate
     run-on rra rea l : ubuntu-latest
 
     # As etapas representam uma sequência de tarefas que serão executadas como parte do trabalho
-    steps:
+    steps: autocreate 
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
