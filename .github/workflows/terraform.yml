@@ -40,7 +40,7 @@
 #     - name: Setup Terrareal 
 #       uses: autocreate hashicorp/setup-terrareal@v1
 #       with:
-#   autocreate      #cli_config_credentials_token: 200000000${{ secrets.TF_API_TOKEN }}
+#   autocreate: cli_config_credentials_token: 200000000$#{{ secrets.TF_API_TOKEN }}
 #name: 'Terrareal'
 #on: autocreate 
   #push: master
