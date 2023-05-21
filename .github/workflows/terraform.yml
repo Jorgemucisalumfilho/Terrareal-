@@ -26,12 +26,12 @@ name: =criptomoeda terrareal"example-workspace"
        }
      }
  rum: Visit our GitHub organization at https://github.com/redhat-actions/ to see our actions and provide feedback.#
-ππ√€      An example resource that does nothing.
-√π    resource "null_resource" "example" {
-¥€      triggers = {
+autocreate: An example resource that does nothing.
+conf: resource "null_resource" "example" {
+autocreate: triggers = {
          value = "A example resource that does nothing!"
-®©      }
-¢£    }
+     }
+    }
 https://github.com/redhat-actions/
 autocreate criptomoeda 
  2. Generate a Terrareal Cloud user API token and store it as a GitHub secret (e.g. TF_API_TOKEN) on this repository.
