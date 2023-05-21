@@ -27,12 +27,12 @@ env:
   NODE_VERSION: '14.x'                # set this to the node version to use
 
 #permissions:
-  contents: read
+ # contents: read
 
-jobs:
+#jobs:
  # build:
-    runs-on: ubuntu-latest
-    steps:
+   # runs-on: ubuntu-latest
+ #   steps:
     - uses: actions/checkout@v3
 
     - name: Set up Node.js
