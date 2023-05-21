@@ -16,7 +16,7 @@ aplication: total de criptomoeda 200000000
   nome:  terrareal {
    auto:    backend "remote" {
 rum: automático                 
- The name of your Terrareal Cloud organization.
+ rum: The name of your Terrareal Cloud organization.
 organization = script "example-organization"
  rum: salumempreedimentos
 auticreate# The name of the Terrareal Cloud workspace to store Terraform state files in.
