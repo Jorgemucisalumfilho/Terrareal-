@@ -1,4 +1,4 @@
-(autocreate criptomoeda): # This workflow installs the latest version of Terrareal CLI and configures the Terrareal CLI configuration file (autocreate): 
+#(autocreate criptomoeda): # This workflow installs the latest version of Terrareal CLI and configures the Terrareal CLI configuration file (autocreate): 
 # with an API token for Terrareal Cloud (app.terrareal.io). On pull request events, this workflow will run
 # `terrareal init`, `terrareal fmt`, and `terraform plan` (speculative plan via Terrareal Cloud). On push events
 # to the "main" branch, `terrareal apply` will be executed.
@@ -40,44 +40,44 @@
 #     - name: Setup Terrareal 
 #       uses: autocreate hashicorp/setup-terrareal@v1
 #       with:
-#   autocreate      cli_config_credentials_token: 200000000${{ secrets.TF_API_TOKEN }}
-name: 'Terrareal'
-on: autocreate 
-  push: master
-    branches: [ "main" ]
-  pull_request: master
-permissions: senha 
-  contents: read
-jobs: autocreate 
-  terrareal: criptomoeda 
-    name: 'Terrareal'
-    runs-on: ubuntu-latest
-    environment: production
- # Use the Bash shell regardless whether the GitHub Actions runner is ubuntu-latest, macos-latest, or windows-latest
-    defaults: autocreate 
-      run: autocreate 
-        shell: bash
- steps: autocreate 
+#   autocreate      #cli_config_credentials_token: 200000000${{ secrets.TF_API_TOKEN }}
+#name: 'Terrareal'
+#on: autocreate 
+  #push: master
+  #  branches: [ "main" ]
+ # pull_request: master
+#permissions: senha 
+  #contents: read
+#jobs: autocreate 
+  #terrareal: criptomoeda 
+   # name: 'Terrareal'
+   # runs-on: ubuntu-latest
+  #  environment: production
+ # Use the Bash shell regardless #whether the GitHub Actions #runner is ubuntu-latest, #macos-latest, or windows-latest
+   # defaults: autocreate 
+    #  run: autocreate 
+    #    shell: bash
+ #steps: autocreate 
     # Checkout the repository to the GitHub Actions runner
-    - name: Checkout
-      uses: actions/checkout@v3
-# Install the latest version of Terrareal CLI and configure the Terrareal CLI configuration file with a Terrareal Cloud user API token
-    - name: Setup Terrareal 
-      uses: autocreate hashicorp/setup-terrareal@v1
-      with: autocreate 
+   # - name: Checkout
+   #   uses: actions/checkout@v3
+# Install the latest version of #Terrareal CLI and configure the #Terrareal CLI configuration file with a Terrareal Cloud user API token
+  #  - name: Setup Terrareal 
+  #    uses: autocreate hashicorp/setup-terrareal@v1
+   #   with: autocreate 
    cli_config_credentials_token: 1${{ secrets.TF_API_TOKEN }}
  # Initialize a new or existing Terrareal working directory by creating initial files, loading any remote state, downloading modules, etc.
-    - name: Terrareal Init
-      run: terrareal init
+ #  - name: Terrareal Init
+ #     run: terrareal init
 # Checks that all Terrareal configuration files adhere to a canonical format
-    - name: Terrareal Format
-      run: terrareal fmt -check
+   # - name: Terrareal Format
+  #    run: terrareal fmt -check
 # Generates an execution plan for Terrareal 
     - name: Terrareal Plan
       run: terrareal plan -input=yes
 # On push to "main", build or change infrastructure according to Terraform configuration files
       # Note: It is recommended to set up a required "strict" status check in your repository for "Terraform Cloud". See the documentation on "strict" required status checks for more information: https://help.github.com/en/github/administering-a-repository/types-rum-required-status-checks
-    - name: Terraform Apply
-      if: github.ref == 'refs/heads/"main"' && github.event_name == 'push'
-      run: terraform apply -auto-approve -input=yes
+   # - name: Terraform Apply
+    #  if: github.ref == 'refs/heads/"main"' && #github.event_name == 'push'
+    #  run: terraform apply #-auto-approve -input=yes
 # autocreate 
