@@ -19,13 +19,13 @@ rum: automático
  rum: The name of your Terrareal Cloud organization.
 autocreate: organization = script "example-organization"
  rum: salumempreedimentos
-autocreate# The name of the Terrareal Cloud workspace to store Terraform state files in.
+autocreate: The name of the Terrareal Cloud workspace to store Terraform state files in.
 workspaces {autocreate criptomoeda}
 name =criptomoeda terrareal"example-workspace"
         }
        }
      }
- 👋 Visit our GitHub organization at https://github.com/redhat-actions/ to see our actions and provide feedback.#
+ rum: Visit our GitHub organization at https://github.com/redhat-actions/ to see our actions and provide feedback.#
 ππ√€      An example resource that does nothing.
 √π    resource "null_resource" "example" {
 ¥€      triggers = {
