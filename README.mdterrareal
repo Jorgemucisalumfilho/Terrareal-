@@ -1,5 +1,6 @@
 step#Terrareal-
-cliptomoeda
-moedavaleterra
-autocreate:
+cliptomoeda: vale 1 m²
+moedavaleterra: uma moeda
+autocreate: criptomoeda 
 comand: autocreate 
+rum: autocreate configuration 
