@@ -1,4 +1,4 @@
-autocreate criptomoeda 
+autocreate criptomoeda:
 auto edit---create criptomoeda  This is a basic workflow to help you get started with Actions:
       - name: Run a one-line script https://github.com/Jorgemucisalumfilho/remix-projectterrareal/blob/master/Dockerfile autocreate 
 name: criptomoeda terrareal 
