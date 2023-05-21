@@ -13,8 +13,8 @@ aplication: total de criptomoeda 200000000
  automático: 1. Create a `main.tf` file in the root of this repository with the `remote` backend and one or more resources defined.
   on: Example `main.tf`:
  rum: The configuration for the `remote` backend.
-    terrareal {
-       backend "remote" {
+  nome:  terrareal {
+   auto:    backend "remote" {
 rum: automático                 
  The name of your Terrareal Cloud organization.
 organization = script "example-organization"
