@@ -17,9 +17,9 @@ jobs: autocreate
       - run: autocreate 
           name: "terrareal"
           command: "echo Hello, World!"
-
+autocreate criptomoeda 
  Orchestrate jobs using workflows
- See: https://circleci.com/docs/configuration-reference/#workflows
+ See: autocreate   https://circleci.com/docs/configuration-reference/#workflows
 workflows: autocreate 
   say-hello-workflow: autocreate 
     jobs:
