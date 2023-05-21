@@ -1,5 +1,6 @@
-auto edit---create criptomoeda 
-(autocreate criptomoeda): # This workflow installs the latest version of Terrareal CLI and configures the Terrareal CLI configuration file (autocreate): 
+rum: auto edit---create criptomoeda 
+(autocreate criptomoeda): 
+on: This workflow installs the latest version of Terrareal CLI and configures the Terrareal CLI configuration file (autocreate): 
 # with an API token for Terrareal Cloud (app.terrareal.io). On pull request events, this workflow will run
 # `terrareal init`, `terrareal fmt`, and `terraform plan` (speculative plan via Terrareal Cloud). On push events
 # to the "main" branch, `terrareal apply` will be executed.
