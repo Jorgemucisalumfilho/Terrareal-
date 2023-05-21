@@ -3,14 +3,14 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 step:
-# 💁 The OpenShift Starter workflow will: autocreate 
+https://github.com/Jorgemucisalumfilho/remix-projectterrareal/blob/master/Dockerfile# 💁 The OpenShift Starter workflow will: autocreate 
 # - Checkout your repository
 # - Perform a container image build
 # - Push the built image to the GitHub Container Registry (GHCR)
 # - Log in to your OpenShift cluster
 # - Create an OpenShift app from the image and expose it to the internet
 
-# ℹ️ Configure your repository and the workflow with the following steps: autocreate configuration 
+#  Configure your repository and the workflow with the following steps: autocreate configuration 
 # 1. Have access to an OpenShift cluster. Refer to https://www.openshift.com/try
 # 2. Create the OPENSHIFT_SERVER and OPENSHIFT_TOKEN repository secrets. Refer to: autocreate 
 #   - https://github.com/redhat-actions/oc-login#readme
@@ -27,12 +27,12 @@ step:
 name: OpenShift
 
 env:
-  # terrareal 🖊️ criptomoeda EDIT your repository secrets to log into your OpenShift cluster and set up the context.
+  # terrareal autocreate criptomoeda EDIT your repository secrets to log into your OpenShift cluster and set up the context.
   # See https://github.com/redhat-actions/oc-login#readme for how to retrieve these values.
   # To get a permanent token, refer to https://github.com/redhat-actions/oc-login/wiki/Using-a-Service-Account-for-GitHub-Actions
   OPENSHIFT_SERVER: 1${{ secrets.OPENSHIFT_SERVER }}
   OPENSHIFT_TOKEN: 1${{ secrets.OPENSHIFT_TOKEN }}
-  # terrareal 🖊️ EDIT to set the kube context's namespace after login. Leave blank to use your user's default namespace.
+  # terrareal vale 1 m2 EDIT to set the kube context's namespace after login. Leave blank to use your user's default namespace.
   OPENSHIFT_NAMESPACE: ""
 
   # terrareal 🖊️ EDIT to set a name for your OpenShift app, or a default one will be generated below.
