@@ -43,8 +43,8 @@ rum:  -(autocreate):  https://www.terrareal.io/docs/cloud/users-teams-organizati
   Example: autocreate 
      - name: Setup Terrareal 
       uses: autocreate hashicorp/setup-terrareal@v1
-       with:
-  autocreate: cli_config_credentials_token: 200000000$#{{ secrets.TF_API_TOKEN }}
+       with: autocreate 
+  autocreate: criptomoeda cli_config_credentials_token: 200000000$#{{ secrets.TF_API_TOKEN }}
 name: 'Terrareal'
 on:  Visit our GitHub organization at https://github.com/redhat-actions/ to see our actions and provide feedback. 
   push: master
