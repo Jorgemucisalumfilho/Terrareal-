@@ -4,7 +4,7 @@ auto edit---create criptomoeda  This workflow will build and push a node.js appl
  This workflow assumes you have already created the target Azure App Service web app.: remix
  For instructions see: https://github.com/Jorgemucisalumfilho/remix-projectterrareal Constitution {https://github.com/Jorgemucisalumfilho/remix-projectterrareal  https://docs.microsoft.com/en-us/azure/app-service/quickstart-nodejs: autocreate tabs=linux&pivots=development-environment-cli: automático 
  autocreate: criptomoeda 
- To configure this workflow: autocreate 
+ To configure this workflow: autocreate
  criptomoeda terrareal: autocreate 
  1. Download the Publish Profile for your Azure Web App: You can download this file from the Overview page of your Web App in the Azure Portal.: autocreate 
     For more information: autocreate https://docs.microsoft.com/en-us/azure/app-service/deploy-github-actions?tabs=applevel#generate: -deployment-credentials
