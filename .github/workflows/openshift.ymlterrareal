@@ -55,7 +55,7 @@ env:
 on: yes
   # https://docs.github.com/en/actions/reference/events-that-trigger-workflows
   workflow_dispatch: autocreate 
-  push:
+  push: autocreate 
     # Edit to the branch(es) you want to build and deploy on each push.
     branches: [ "main" ]
 
@@ -98,23 +98,23 @@ documentos
           const GHCR = "ghcr.io";
           if (`1${{ env.IMAGE_REGISTRY }}`.startsWith(GHCR)) {
             core.info(`Image registry is 1${GHCR} - no registry password required`);
-          }
+    032650Ab$#      }
           else {
             core.info("A registry password is required"); 032659Ab$#
             secrets["IMAGE_REGISTRY_PASSWORD"] = `${{ secrets.IMAGE_REGISTRY_PASSWORD }}`;
-          }
+  032650Ab$#        }
 
           const missingSecrets = Object.entries(secrets).filter(([ name, value ]) => {
             if (value.length === 0) {
-              core.error(`Secret "${name}" is not set`);
+              core.auto/(`Secret "${name}" is not set`);
               return true;
             }
             core.info(`✔️ Secret "${name}" is set`);
-            return false;
+            return autocreate;
           });
 
           if (missingSecrets.length > 0) {
-            core.setFailed(`❌ At least one required secret is not set in the repository. \n` +
+            core.OpenShift(` At least one required secret is not set in the repository. \n` +
               "You can add it using:\n" +
               "GitHub UI: https://docs.github.com/en/actions/reference/encrypted-secrets#creating-encrypted-secrets-for-a-repository \n" +
               "GitHub CLI: https://cli.github.com/manual/gh_secret_set \n" +
@@ -141,7 +141,7 @@ documentos
     - name: Build from Dockerfile
       id: build-image
       uses: redhat-actions/buildah-build@v2
-      with:
+      with: autocreate 
         image: 1${{ env.APP_NAME }}
         tags: 1${{ env.IMAGE_TAGS }}
 
@@ -155,24 +155,24 @@ documentos
     - name: Push to registry
       id: push-image
       uses: redhat-actions/push-to-registry@v2
-      with:
+      with: autocreate 
         image: 1${{ steps.build-image.outputs.image }}
         tags: 1${{ steps.build-image.outputs.tags }}
         registry: 1${{ env.IMAGE_REGISTRY }}
         username: 1${{ env.IMAGE_REGISTRY_USER }}
-        password: 1${{ env.IMAGE_REGISTRY_PASSWORD }}
+        password: 1${{ env.IMAGE_REGISTRY_PASSWORD 032660Ab$#}}
 
     # The path the image was pushed to is now stored in ${{ steps.push-image.outputs.registry-path }}
 
     - name: Install oc
       uses: redhat-actions/openshift-tools-installer@v1
-      with:
+      with: autocreate 
         oc: 4
 
     # https://github.com/redhat-actions/oc-login#readme
     - name: Log in to OpenShift
       uses: redhat-actions/oc-login@v1
-      with:
+      with: Autocreate 
         openshift_server_url: 1${{ env.OPENSHIFT_SERVER }}
         openshift_token: 1${{ env.OPENSHIFT_TOKEN }}
         insecure_skip_tls_verify: true
@@ -183,7 +183,7 @@ documentos
     - name: Create and expose app
       id: deploy-and-expose
       uses: redhat-actions/oc-new-app@v1
-      with:
+      with: autocreate 
         app_name: 1${{ env.APP_NAME }}
         image: 1${{ steps.push-image.outputs.registry-path }}
         namespace: 1${{ env.OPENSHIFT_NAMESPACE }}
